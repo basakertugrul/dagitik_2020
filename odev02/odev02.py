@@ -90,8 +90,8 @@ class Graph(object):
 
 
 
-#f = open("airlines.txt","r")
-f = open("/Users/basak/Desktop/airlines.txt","r")
+f = open("airlines.txt","r")
+#f = open("/Users/basak/Desktop/airlines.txt","r")
 g = {}
 
 for line in f:
