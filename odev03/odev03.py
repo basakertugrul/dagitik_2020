@@ -3,13 +3,18 @@ import matplotlib.pyplot as plt
 
 
 
+#grafik arasi bosluk yap
+#try catch
+
+
+
 
 f = open("lab8_3.91-6.11-1.57.mbd","r")
 
 
-    #firstpart
+#firstpart
 map = {}
-
+map = {}
 for line in f:
     couple = ""
     splittedLine=line.strip().split(",")
@@ -23,7 +28,16 @@ for line in f:
             
     else:
         map[couple] = value
-            
+
+
+
+for key in map:
+    print(key)
+
+
+
+
+
 for key in map:
     temp=[]
     temp=map[key].split()
@@ -53,12 +67,49 @@ for key in map:
         zeros[key][k]=zeros[key][k]+1
             
 
+list=[]
+namelist=[]
 for key in map:
-    numbers=arrange[key]
-    values=zeros[key]
-    plt.bar(numbers, values, color ='orange', width = 0.75)
-    plt.title(key)
-    plt.show()
+    list.append(arrange[key])
+    list.append(zeros[key])
+    namelist.append(key)
+    
+
+plt.figure(figsize=(15,10))
+x=0
+plt.subplot(2, 4, 1)
+plt.bar(list[x],list[x+1], color='orange', width = 0.75,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 2)
+plt.bar(list[x],list[x+1], color='orange', width = 0.75,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 3)
+plt.bar(list[x],list[x+1], color='orange', width = 0.75,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 4)
+plt.bar(list[x],list[x+1], color='orange', width = 0.75,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 5)
+plt.bar(list[x],list[x+1], color='orange', width = 0.75,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 6)
+plt.bar(list[x],list[x+1], color='orange', width = 0.75,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 7)
+plt.bar(list[x],list[x+1], color='orange', width = 0.75,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 8)
+plt.bar(list[x],list[x+1], color='orange', width = 0.75,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+
+plt.show()
 
 f.close()
 
@@ -73,7 +124,9 @@ w=100.0
 def instFreq (Tt, Ttw):
     f=w/float(float(Ttw)-float(Tt))
     return f
-
+    
+    
+time={}
 time={}
 for line in f:
     couple = ""
@@ -88,7 +141,9 @@ for line in f:
             
     else:
         time[couple] = value
-            
+        
+    
+
 for key in time:
     temp=[]
     temp=time[key].split()
@@ -98,7 +153,7 @@ for key in time:
 frekans={}
 for key in time:
     frekans[key]=[]
-
+    
 
 
 for key in time:
@@ -116,22 +171,50 @@ for key in time:
 
 
 
-    #Anlik frekans degisimleri
+#Anlik frekans degisimleri
+fig, ax=plt.subplots(2,4,figsize=(20, 10), tight_layout=True)
+#fig.suptitle('Anlik frekans degisimleri',fontsize=20,fontweight='bold')
+
+list=[]
+namelist=[]
 for key in frekans:
     for item in frekans[key]:
         item=float(item)
       
 for key in frekans:
-    xx = range(len(frekans[key]))
-    x= xx
-    y = frekans[key]
-    plt.plot(x, y)
-    plt.title(key)
-    plt.show()
+    list.append(range(len(frekans[key])))
+    list.append(frekans[key])
+    namelist.append(key)
      
-     
-     
-    #Anlik frekans dagilimlari
+x=0
+ax[0,0].plot(list[x],list[x+1],'orange')
+ax[0, 0].set_title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+ax[0,1].plot(list[x],list[x+1],'orange')
+ax[0, 1].set_title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+ax[0,2].plot(list[x],list[x+1],'orange')
+ax[0, 2].set_title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+ax[0,3].plot(list[x],list[x+1],'orange')
+ax[0, 3].set_title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+ax[1,0].plot(list[x],list[x+1],'orange')
+ax[1, 0].set_title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+ax[1,1].plot(list[x],list[x+1],'orange')
+ax[1, 1].set_title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+ax[1,2].plot(list[x],list[x+1],'orange')
+ax[1, 2].set_title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+ax[1,3].plot(list[x],list[x+1],'orange')
+ax[1, 3].set_title(namelist[x/2],fontsize=10,fontweight='bold')
+
+plt.show()
+ 
+ 
+#Anlik frekans dagilimlari
 interval=[]
 def float_range(A, L=None, D=None):
     if L == None:
@@ -169,13 +252,59 @@ for key in frekans:
             if item>interval[val] and item<interval[val+1]:
                 zeros2[key][val]=zeros2[key][val]+1
                     
-
+list=[]
+namelist=[]
 for key in frekans:
-    numbers=interval
-    values=zeros2[key]
-    plt.bar(numbers, values, color ='orange', width = 0.05)
-    plt.title(key)
-    plt.show()
+    list.append(interval)
+    list.append(zeros2[key])
+    namelist.append(key)
+
+
+
+
+
+plt.figure(figsize=(15,10))
+x=0
+plt.subplot(2, 4, 1)
+plt.bar(list[x],list[x+1], color='orange', width = 0.25,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 2)
+plt.bar(list[x],list[x+1], color='orange', width = 0.25,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 3)
+plt.bar(list[x],list[x+1], color='orange', width = 0.25,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 4)
+plt.bar(list[x],list[x+1], color='orange', width = 0.25,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 5)
+plt.bar(list[x],list[x+1], color='orange', width = 0.25,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 6)
+plt.bar(list[x],list[x+1], color='orange', width = 0.25,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 7)
+plt.bar(list[x],list[x+1], color='orange', width = 0.25,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+x=x+2
+plt.subplot(2, 4, 8)
+plt.bar(list[x],list[x+1], color='orange', width = 0.25,edgecolor = "none")
+plt.title(namelist[x/2],fontsize=10,fontweight='bold')
+
+
+plt.show()
+
+
+
+
+
+
 
 
 f.close()
