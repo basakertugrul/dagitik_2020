@@ -1,0 +1,27 @@
+-  Tarih: Fri Dec 25 00:22:03 2020 Thread no: 2 acildi.
+-  Tarih: Fri Dec 25 00:22:03 2020 Thread no: 3 acildi.
+-  Tarih: Fri Dec 25 00:22:43 2020 Thread no: 2 acildi.
+-  Tarih: Fri Dec 25 00:22:43 2020 Thread no: 3 acildi.
+-  Tarih: Fri Dec 25 00:22:50 2020 Kendini tanitmayan biri genel mesaj gondermek istedi.
+-  Tarih: Fri Dec 25 00:22:54 2020 Kendini tanitmayan biri isimleri listelemek istedi.
+-  Tarih: Fri Dec 25 00:23:00 2020 BASAK adi alindi.
+-  Tarih: Fri Dec 25 00:23:04 2020 BASAK SELAM genel mesajini gonderdi.
+-  Tarih: Fri Dec 25 00:23:07 2020 BASAK isimleri listeledi.
+-  Tarih: Fri Dec 25 00:23:10 2020 Thread no: 4 acildi.
+-  Tarih: Fri Dec 25 00:23:10 2020 Thread no: 5 acildi.
+-  Tarih: Fri Dec 25 00:23:15 2020 Kendini tanitmayan biri isimleri listelemek istedi.
+-  Tarih: Fri Dec 25 00:23:22 2020 Kendini tanitmayan biri isimleri listelemek istedi.
+-  Tarih: Fri Dec 25 00:23:36 2020 BASAK adi kullanilmakta oldugu icin reddedildi.
+-  Tarih: Fri Dec 25 00:23:43 2020 BSK adi alindi.
+-  Tarih: Fri Dec 25 00:23:48 2020 BSK SELAM genel mesajini gonderdi.
+-  Tarih: Fri Dec 25 00:23:58 2020 BASAK MERHABA HOSGELDIN genel mesajini gonderdi.
+-  Tarih: Fri Dec 25 00:24:10 2020 BSK, BASAK adli kullaniciyaNABER KNK  ozel mesajini gonderdi.
+-  Tarih: Fri Dec 25 00:24:27 2020 BASAK, BSK adli kullaniciyaIYIDIR SEN?  ozel mesajini gonderdi.
+-  Tarih: Fri Dec 25 00:24:31 2020 BSK isimleri listeledi.
+-  Tarih: Fri Dec 25 00:24:33 2020 BASAK isimleri listeledi.
+-  Tarih: Fri Dec 25 00:24:36 2020 Thread no: 4 kapandi.
+-  Tarih: Fri Dec 25 00:24:36 2020 BSK cikti.
+-  Tarih: Fri Dec 25 00:24:53 2020 BASAK isimleri listeledi.
+-  Tarih: Fri Dec 25 00:25:04 2020 BASAK K adli bulunamayan kullaniciya ozel mesaj gondermek istedi.
+-  Tarih: Fri Dec 25 00:25:08 2020 Thread no: 2 kapandi.
+-  Tarih: Fri Dec 25 00:25:08 2020 BASAK cikti.
