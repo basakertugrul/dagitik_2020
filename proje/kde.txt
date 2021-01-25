@@ -1,0 +1,9 @@
+RGS kde 2020 
+ENT kde 2020 
+LSR
+ENR ubuntu
+LSR ubuntu
+OPN plasma
+ENR plasma
+LSR
+DEL plasma

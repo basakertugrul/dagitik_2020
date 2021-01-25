@@ -1,0 +1,12 @@
+LSR 
+ENT torvalds 1972
+CHN torvalds 1974
+LSR
+GNL gentoo:selam
+ENR gentoo
+GNL gentoo:tekrar selam
+PRV tux:beni niye banladın?
+ENR ubuntu
+LSR ubuntu
+GNL ubuntu:hey
+KIC ubuntu tux

@@ -1,0 +1,11 @@
+RGS tux herring 
+RGS tux 1994
+RGS torvalds 1972
+ENT tux 1984
+ENT tux 1994
+OPN gentoo 
+ENR gentoo
+KIC gentoo torvalds
+BAN gentoo torvalds
+OPN ubuntu
+YON gentoo torvalds
